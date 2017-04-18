@@ -16,13 +16,13 @@
 int main() {
   init();
 
-  // Setup code!
+  // Setup code
   Serial.begin(9600);
   Serial.setTimeout(10000); // How many milliseconds to wait until giving up on user input
   pinMode(13, OUTPUT);
   digitalWrite(13, HIGH);
 
-  // Program code!
+  // Program code
   String yourname;
   bool yes_or_no;
   int int1, int2, int_avg;
@@ -33,9 +33,6 @@ int main() {
 
   Serial.print("Hello ");
   Serial.println(yourname);
-  Serial.print("The size of an int on this system is ");
-  Serial.print(sizeof(int));
-  Serial.println(" bytes");
   delay(1000);
   Serial.print("Please enter an integer: ");
   int1 = Serial.parseInt();
@@ -50,10 +47,6 @@ int main() {
   Serial.println();
   delay(2000);
 
-  Serial.print("The size of a floating point number on this system is ");
-  Serial.print(sizeof(float));
-  Serial.println(" bytes");
-  delay(1000);
   Serial.print("Now enter a real number: ");
   float1 = Serial.parseFloat();
   Serial.print(float1);
