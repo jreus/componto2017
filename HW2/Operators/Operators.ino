@@ -8,13 +8,15 @@
 #include <arduino.h>
 
 int main() {
-  init();
+  init(); // I have to run this at the beginning of every program!
 
-  Serial.begin(9600);
+  // This is where my setup code goes!
+  Serial.begin(9600);  // this command is necessary if you want to use Serial communication!
 
+  // This is where my program code goes!
   Serial.println("Some Calculations in C");
   Serial.println();
-  
+
   Serial.print("98 - 300 x 21 =");
   Serial.println(98 - 300 * 21);
   Serial.println();
@@ -30,10 +32,13 @@ int main() {
   Serial.println(300 < 20);
   Serial.print("30 != 30 ?: ");
   Serial.println(30 != 30);
+  
   Serial.print("15 == 15 OR 30 != 30 ?: ");
   Serial.println(15 == 15 || 30 != 30);
+  
   Serial.print("NOT (15 == 15 OR 30 != 30) ?: ");
   Serial.println(!(15 == 15 || 30 != 30));
+  
   Serial.print("(2+1) > 2 AND (23 / 4) == 5 AND (23 % 4) == 3 ?: ");
   Serial.println((2+1) > 2 && (23 / 4) == 5 && (23 % 4) == 3);
 
