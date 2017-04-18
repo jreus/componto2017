@@ -29,7 +29,7 @@ int main() {
   float float1, float2, float_avg;
 
   Serial.println("Hello. What's your name?");
-  yourname = Serial.readStringUntil('\n');  // '\n' is the character "new line"
+  yourname = Serial.readStringUntil('\n');  // '\n' is the code for a "new line" character
 
   Serial.print("Hello ");
   Serial.println(yourname);
