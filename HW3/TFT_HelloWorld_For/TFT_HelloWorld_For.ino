@@ -6,7 +6,7 @@
  * 
  * 1. do repeatedly
  *    1. choose a random text color
- *    2. Start with y equal to 0
+ *    2. Start with x and y equal to 0
  *    3. while y is within the bounds of the screen
  *        1. if y is an even step, write "Hello" to the screen at (0,y)
  *        2. if y is an odd step, write "World" to the screen at (screenWidth/2, y)
@@ -38,12 +38,21 @@ int main() {
   myscreen.background(0, 0, 0);   // make the background black
   myscreen.setTextSize(2);
   
-  int xpos=0, ypos=0;
+  int ypos=0;
   while(true) {
 
     myscreen.stroke(random(0,255), random(0,255), random(0,255));
-    ypos = 0;
 
+    for(ypos = 0; ypos < myscreen.height(); ypos += 10) {
+      if(ypos / 10 % 2 == 0) {
+        myscreen.text("Hello", 0, ypos);
+      } else {
+        myscreen.text("World", myscreen.width() / 2, ypos);        
+      }      
+    }
+
+    /*
+    ypos = 0;
     while(ypos < myscreen.height()) {
       if(ypos / 10 % 2 == 0) {
         myscreen.text("Hello", 0, ypos);
@@ -52,6 +61,7 @@ int main() {
       }
       ypos += 10;
     }
+    */
   }
   
   return 0;
