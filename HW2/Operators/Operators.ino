@@ -43,6 +43,7 @@ int main() {
   Serial.print("(2+1) > 2 AND (23 / 4) == 5 AND (23 % 4) == 3 ?: ");
   Serial.println((2+1) > 2 && (23 / 4) == 5 && (23 % 4) == 3);
 
-  delay(2000);
+  Serial.flush(); // waits until all outgoing serial data is finished sending
+  //delay(2000); // also does the trick, but flush() is built for this purpose!
   return 0;
 }
