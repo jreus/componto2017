@@ -38,7 +38,7 @@ int main() {
   myscreen.background(0, 0, 0);   // make the background black
   myscreen.setTextSize(2);
   
-  int xpos=0, ypos=0;
+  int ypos=0;
   while(true) {
 
     myscreen.stroke(random(0,255), random(0,255), random(0,255));
