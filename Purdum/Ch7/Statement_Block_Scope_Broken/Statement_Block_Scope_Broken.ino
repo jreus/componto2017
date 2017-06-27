@@ -39,7 +39,6 @@ void setupCode() {
 
 void programLoop() {
   int x = 5; // x has local scope (within the function programLoop)
-    
   if(x < MAXVAL) {
       int temp;  // temp has statement scope
       
@@ -50,6 +49,7 @@ void programLoop() {
   Serial.println(temp);
 
   if(k++ > 10)
-    exit(0); // special function to exit the program
+    exit(0); // special function to exit the program entirely, no matter what function you're in
+    
 }
 
