@@ -10,6 +10,8 @@ Computational Ontologies SoSe2017
  * Resolution (Bit-depth)
 * Von Neumann Architecture / Harvard Architecture
 * The stored program principle
+* Semiconductors
+* Solid-State Electronics
 * Moore's Law
 * Functional Abstraction
 * High and Low Level Programming Languages
