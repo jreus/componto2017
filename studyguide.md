@@ -11,6 +11,7 @@ Computational Ontologies SoSe2017
 * Von Neumann Architecture / Harvard Architecture
 * The stored program principle
 * Moore's Law
+* Functional Abstraction
 * High and Low Level Programming Languages
  * Machine code
  * Assembly language
