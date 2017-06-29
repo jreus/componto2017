@@ -1,4 +1,12 @@
-/*  https://www.ics.uci.edu/~eppstein/161/960109.html
+/*  
+ *   This program shows two functions that compute the Nth 
+ *   number of the Fibonacci sequence: F(N) = F(N-1)+F(N-2)
+ *   
+ *   One function shows an iterative solution, the second a recursive solution.
+ *  
+ *  
+ *  Reference: 
+ *  https://www.ics.uci.edu/~eppstein/161/960109.html
  *  http://will.thimbleby.net/algorithms/doku.php?id=fibonacci
  *  
  *  The Fibonacci story:
@@ -29,31 +37,15 @@
  *  F(4) = 3 -- in the third year, they have another pair
  *  F(5) = 5 -- we get the first set of grandchildren
  *  
- *  In general F(n) = F(n-1) + F(n-2): all the previous rabbits are still 
- *  there (F(n-1)) plus we get one pair of children for every pair of 
- *  rabbits we had two years ago (F(n-2)).
+ *  The Nth Fibonacci number is defined recursively: 
+ *  F(n) = F(n-1) + F(n-2)
  *  
- *  The algorithmic problem we'll look at today: how to compute F(n)?
+ *  You could read this as: All the previous rabbits are still there (F(n-1)) 
+ *  plus we get one pair of children for every pair of rabbits we had two years ago (F(n-2)).
  *  
- *  A recursive algorithm
- *  The original formula seems to give us a natural example of recursion:
- *  Algorithm 1:
- *  
- *  int fib(int n)
- *  {
- *  if (n <= 2) return 1
- *  else return fib(n-1) + fib(n-2)
- *  }
- * 
- * 
- * 
  */
 
 #include <arduino.h>
-#include "myfuncs.c"
-
-
-
 
 int main() {
   init();
@@ -63,13 +55,16 @@ int main() {
   Serial.setTimeout(10000);
 
   Serial.print("\n Hello. \n Please enter an integer N: "); 
-  N = Serial.parseInt(); Serial.println(N);
+  N = Serial.parseInt(); 
+  Serial.println(N);
 
   result = fib_iter(N);
   //result = fib_recursive(N);
  
   delay(1000);
-  Serial.print("The "); Serial.print(N); Serial.print(" Fibonacci number is ");
+  Serial.print("The "); 
+  Serial.print(N); 
+  Serial.print(" Fibonacci number is ");
   Serial.println(result);
   
   Serial.println("Goodbye");
@@ -77,6 +72,31 @@ int main() {
   return 0;
 }
 
+// A function that calculates the Nth Fibonacci number using iteration (loops).
+int fib_iter(int N) {
+  int fib_N1 = 1, fib_N2 = 1;
 
+  if(N == 1 || N == 2) {
+    return 1;
+  }
+
+  for(int i = 3; i <= N; i++) {
+      int fib_N;
+      fin_N = fib_N1 + fib_N2;
+      fib_N2 = fib_N1;
+      fib_N1 = fib_N;
+  }
+  return fib_N1;
+}
+
+
+// A function that calculates the Nth Fibonacci number using recursive calls to itself.
+int fib_recursive(int N) {
+  if(N == 1 || N == 2) {
+    return 1;
+  } else {
+    return fib_recursive(N-1) + fib_recursive(N-2);
+  }
+}
 
 

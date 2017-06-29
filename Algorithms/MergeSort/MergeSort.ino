@@ -68,19 +68,11 @@ int main() {
 
   Serial.begin(9600);
 
-  // Generate a new array with random numbers from 0 to 160
-  /*
-  int A[ASIZE];
-  for(int i=0; i < ASIZE; i++) {
-    A[i] = random(0, 160);
-  }
-  */
-
   int A[] = { 49, 7, 118, 72, 24, 58, 3, 109 };
   
 
   Serial.print("Sort the array:");
-  printArray(A, ASIZE);
+  printArray(A, 0, ASIZE-1);
   Serial.println();
   delay(2000);
   Serial.println("Sorting...");
@@ -90,9 +82,9 @@ int main() {
 
   Serial.println();
   Serial.print("Sorted: ");
-  printArray(A, ASIZE);
+  printArray(A, 0, ASIZE-1);
 
-  Serial.println("\nGoodbye");
+  Serial.println("\nDone");
   Serial.flush();
 
   return 0;
@@ -141,9 +133,9 @@ void merge(int a[], int low, int mid, int high) {
 
 
   Serial.print("B: ");
-  printArray(B, n1+1);
+  printArray(B, 0, n1+1);
   Serial.print("C: ");
-  printArray(C, n2+1);
+  printArray(C, 0, n2+1);
 
   int i = 0, j = 0;
   for(int k = low; k <= high; k++) {
@@ -153,7 +145,7 @@ void merge(int a[], int low, int mid, int high) {
       a[k] = C[j++];
     }
     Serial.print("a: ");
-    printArray(a, ASIZE);
+    printArray(a, 0, ASIZE-1);
   }
 
   // Always remember to free up your dynamic memory after you use it using delete!
@@ -163,25 +155,27 @@ void merge(int a[], int low, int mid, int high) {
   
 }
 
-void copyArray(int from[], int low, int high, int to[], int to_idx) {
-  for(int idx = low; idx <= high; idx++) {
-    to[to_idx] = from[idx];
-    to_idx++;
+// copyArray(from, low, high, to, to_idx)
+// Copies elements from a low index (from_left) to a high index (from_right) of one array (from) 
+// into a second array (to), starting at a specific index (to_start).
+void copyArray(int from[], int from_left, int from_right, int to[], int to_start) {
+  for(int idx = from_left; idx <= from_right; idx++) {
+    to[to_start] = from[idx];
+    to_start++;
   }
 }
 
-// Function to print the contents of an array to the Serial monitor
-void printArray(int arr[], int arrsize) {
+// printArray(arr, left, right) 
+// Prints the contents of an array (arr) from one index (left) to another (right).
+void printArray(int arr[], int left, int right) {
   Serial.print("[ ");
-  for(int i=0; i < arrsize; i++) {
+  for(int i=left; i <= right; i++) {
     Serial.print(arr[i]);
-    if(i+1 != arrsize) {
+    if(i < right) {
       Serial.print(", ");
     }
   }
   Serial.println(" ]");
 }
-
-
 
 
