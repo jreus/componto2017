@@ -12,7 +12,10 @@ Computational Ontologies SoSe2017
 * The stored program principle
 * Semiconductors
   * Relay/Vacuum Tubes vs Solid-State Electronics
-  * Moore's Law: [Quantum Computing](https://www.youtube.com/watch?v=rtI5wRyHpTg) |  [ComputerPhile](https://www.youtube.com/watch?v=X8v1BB0UaDs)
+  * Moore's Law:
+    * [Transistors & Moore's Law](https://www.youtube.com/watch?v=rtI5wRyHpTg)
+    * [ComputerPhile Discussion](https://www.youtube.com/watch?v=X8v1BB0UaDs)
+    * [Moore's Law as an Industry Practice](https://www.cnet.com/news/moores-law-the-rule-that-really-matters-in-tech/)
 * Functional Abstraction
 * High and Low Level Programming Languages
   * Machine code
@@ -41,9 +44,9 @@ I suggest taking the time to study a few algorithms and get yourself familiarize
 
 Good resources for this!:
 * The book Algorithms Unlocked, by Thomas H. Cormen
-* geeksforgeeks.org
-http://www.geeksforgeeks.org/fundamentals-of-algorithms/
-This is an amazing resource. Mainly you'll want to focus on understanding the Searching and Sorting algorithms. A few I would suggest focusing on are Bubble Sort, Selection Sort, Insertion Sort, Merge Sort and Quick Sort. Most of them have illustrative videos, but you can also find some nice animations of the algorithms in action on YouTube.
+* [Fundamentals of Algorithms](http://www.geeksforgeeks.org/fundamentals-of-algorithms/) at geeksforgeeks.org
+G4G is an amazing resource. Mainly you'll want to focus on understanding the Searching and Sorting algorithms. A few I would suggest focusing on are Bubble Sort, Selection Sort, Insertion Sort, Merge Sort and Quick Sort. Most of them have illustrative videos, but you can also find some nice animations of the algorithms in action on YouTube.
+* Implementations of Algorithms on the [course github repository](https://github.com/jreus/componto2017/tree/master/Algorithms)
 
 ### C Features
 You'll be expected to understand and be able to use the various features of basic C. Most of this you'll be able to find in _Beginning C for Arduino_ by Jack Purdum
@@ -54,8 +57,7 @@ You'll be expected to understand and be able to use the various features of basi
 * Functions
   * Defining new functions and using them
   * Pass by value and Pass by reference arguments
-  * Here is a good exhaustive reference on functions to use as a supplement to Purdum: https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/Functions.html
-
+  * Here is a good [reference on functions](https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/Functions.html) to use as a supplement to Purdum 
 * Variables
   * Defining and using variables of the basic signed and unsigned types (char, int, byte, float, long, etc..)
   * When and how to use variables at different levels of scope: statement, local, global
