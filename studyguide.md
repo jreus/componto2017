@@ -11,8 +11,8 @@ Computational Ontologies SoSe2017
 * Von Neumann Architecture / Harvard Architecture
 * The stored program principle
 * Semiconductors
-* Solid-State Electronics
-* Moore's Law
+  * Relay/Vacuum Tubes vs Solid-State Electronics
+  * Moore's Law: [Quantum Computing](https://www.youtube.com/watch?v=rtI5wRyHpTg) |  [ComputerPhile](https://www.youtube.com/watch?v=X8v1BB0UaDs)
 * Functional Abstraction
 * High and Low Level Programming Languages
   * Machine code
@@ -20,7 +20,7 @@ Computational Ontologies SoSe2017
   * Compiled Languages
   * Compiler
 * Theory of memory usage in C
-  * heap, stack & data partitions in memory and how they are used
+  * heap, stack, text & data partitions in a program's memory chunk and how they are used
 
 ## Electronics
 *__Bring your Breadboard and Components to the exam!__*
@@ -48,17 +48,17 @@ This is an amazing resource. Mainly you'll want to focus on understanding the Se
 ### C Features
 You'll be expected to understand and be able to use the various features of basic C. Most of this you'll be able to find in _Beginning C for Arduino_ by Jack Purdum
 * Operators
- * Math operators, Boolean operators, assignment operators
+  * Math operators, Boolean operators, assignment operators
 * Loops & Control Statements
- * Know how to use if statements, for and while loops. You should know these three command structures like the back of your hand, and be able to use them purposefully in your programs!
+  * Know how to use if statements, for and while loops. You should know these three command structures like the back of your hand, and be able to use them purposefully in your programs!
 * Functions
- * Defining new functions and using them
- * Pass by value and Pass by reference arguments
- * Here is a good exhaustive reference on functions to use as a supplement to Purdum: https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/Functions.html
+  * Defining new functions and using them
+  * Pass by value and Pass by reference arguments
+  * Here is a good exhaustive reference on functions to use as a supplement to Purdum: https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/Functions.html
 
 * Variables
- * Defining and using variables of the basic signed and unsigned types (char, int, byte, float, long, etc..)
- * When and how to use variables at different levels of scope: statement, local, global
+  * Defining and using variables of the basic signed and unsigned types (char, int, byte, float, long, etc..)
+  * When and how to use variables at different levels of scope: statement, local, global
 * Arrays
- * Defining and using arrays of the basic types
- * Using loops to perform operations on all or some elements of an array
+  * Defining and using arrays of the basic types
+  * Using loops to perform operations on all or some elements of an array
