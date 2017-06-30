@@ -5,9 +5,9 @@ Computational Ontologies SoSe2017
 * Information Theory (know the basic model of communication over a noisy channel and about Shannon's "bit" as a measurement of information)
 * Nyquist frequency / Shannon sampling theorem
 * Digital Signal Representation
- * Analog to Digital Conversion
- * Sampling Rate
- * Resolution (Bit-depth)
+  * Analog to Digital Conversion
+  * Sampling Rate
+  * Resolution (Bit-depth)
 * Von Neumann Architecture / Harvard Architecture
 * The stored program principle
 * Semiconductors
@@ -15,12 +15,12 @@ Computational Ontologies SoSe2017
 * Moore's Law
 * Functional Abstraction
 * High and Low Level Programming Languages
- * Machine code
- * Assembly language
- * Compiled Languages
- * Compiler
+  * Machine code
+  * Assembly language
+  * Compiled Languages
+  * Compiler
 * Theory of memory usage in C
- * heap, stack & data partitions in memory and how they are used
+  * heap, stack & data partitions in memory and how they are used
 
 ## Electronics
 *__Bring your Breadboard and Components to the exam!__*
